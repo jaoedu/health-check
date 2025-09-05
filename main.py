@@ -142,3 +142,5 @@ async def admin_dep_up():
     app.state.dep_ok = True
     logger.info("🧯 Dependência simulada: UP")
     return None
+
+#uvicorn main:app --reload
