@@ -143,4 +143,17 @@ async def admin_dep_up():
     logger.info("🧯 Dependência simulada: UP")
     return None
 
-#uvicorn main:app --reload
+# uvicorn main:app --reload
+
+# liveness http://127.0.0.1:8000/health/live
+
+# readness http://127.0.0.1:8000/health/ready
+
+# falha post http://127.0.0.1:8000/admin/dep/down
+
+# unavailable http://127.0.0.1:8000/health/ready
+
+#  continua vivo GET http://127.0.0.1:8000/health/live
+# recuperar post http://127.0.0.1:8000/admin/dep/up
+
+# GET http://127.0.0.1:8000/health/ready
